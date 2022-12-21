@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+.t-individual{
+    width: 100%;
+    .fondo_image{
+        width: 100%;
+        position: relative;
+        background-color: black;
+        .image{
+            max-width: 100%;
+            opacity: 0.4;
+        }
+        .contenido{
+            position: absolute;
+            color: #fff;
+            top: 40px;
+            left: 20px;
+            .title{
+                font-weight: bold;
+                font-size: 25px;
+                font-family: 'Fredoka One', cursive;
+            }
+            .btn-contacto{
+                border-radius: 30px;
+                font-size: 12px;
+                margin-left: 65px;
+                margin-top: -10px;
+            }
+        }
+    }
+    .descripcion{
+        margin: 8rem 0 40px 10px;
+        .title{
+            font-weight: bold;
+            font-size: 25px;
+            color: rgb(79, 79, 79);
+            font-family: 'Fredoka One', cursive;
+        }
+        .descripcion_content{
+            line-height: 21pt; 
+            font-size:  16px;
+        }
+    }
+}
+
+
+@media (min-width: 768px){
+    .t-individual{
+        .fondo_image{
+            .contenido{
+                position: absolute;
+                color: #fff;
+                top: 12rem;
+                left: 5rem;
+                .title{
+                    font-weight: bold;
+                    font-size: 60px;
+                }
+                .btn-contacto{
+                    width: 200px;
+                    padding: 5px 0;
+                    border-radius: 30px;
+                    font-size: 20px;
+                    margin-left: 10rem;
+                    margin-top: 2rem;
+                }
+            }
+        }
+        .descripcion{
+            .title{
+                font-size:60px;
+            }
+            .descripcion_content{
+                line-height: 21pt; 
+                font-size:  20px;
+            }
+        }
+    }
+}

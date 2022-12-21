@@ -1,0 +1,46 @@
+<div class="general">
+    <div class="section-principal">
+        <img class="img" src="../../assets/principal2.jpg" alt="">
+        <div class="texto-principal">
+            <h1 class="text">YA NO BUSQUES MÁS...</h1>
+            <span class="text">¡ES MOMENTO DE DAR TU PRIMER PASO!</span>
+            <span class="text">TU SALUD MENTAL ES IMPORTANTE, ¿QUÉ ESPERAS?</span>
+            <span class="text">¿AGENDAMOS UNA CITA?</span>
+            <div class="btn">
+                <button class="btn-contacto" mat-raised-button color="primary" (click)="goWhatsapp()">Agenda tu
+                    cita</button>
+            </div>
+        </div>
+    </div>
+    <div class="section-emociones">
+        <span class="title">¿Cómo te sientes hoy?</span>
+        <div class="section-emociones_content">
+            <div class="emociones" *ngFor="let item of dataEmosiones">
+                <img class="img" src="{{item.img}}" alt="" width="100">
+                <span class="title_emociones">{{item.title}}</span>
+            </div>
+        </div>
+    </div>
+    <h1 class="text_section-secundary">¡Toma terapia online desde cualquier parte del mundo!</h1>
+    <div class="section-secundary">
+        <div class="section-items" *ngFor="let item of dataContador">
+            <img class="image" src="{{item.img}}" alt="" width="60">
+            <span class="title">{{item.title}}</span>
+            <span class="numero"
+                *ngIf="item.title === 'Pacientes atendidos' || item.title === 'Años de experiencia'">+{{item.min}}</span>
+            <span class="numero" *ngIf="item.title === 'Seguidores en tiktok'">{{item.min}}k</span>
+            <span class="numero" *ngIf="item.title === 'Mejoraron su condición'">{{item.min}}%</span>
+        </div>
+    </div>
+    <h1 class="text_section-terciario">¿Qué ofrecemos?</h1>
+    <div class="section-terciario">
+        <div class="section-terciario_group">
+            <div class="section-items" *ngFor="let item of dataServicios">
+                <img class="image" src="{{item.img}}" alt="" width="70">
+                <span class="title">{{item.title}}</span>
+                <button class="btn-contacto" mat-raised-button color="primary" (click)="goServices(item.url)">Más
+                    información</button>
+            </div>
+        </div>
+    </div>
+</div>

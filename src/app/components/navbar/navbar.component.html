@@ -1,0 +1,94 @@
+<div class="navbar">
+    <div class="logo">
+        <img src="../../../assets/logo2.png" alt="" width="200" (click)="goHome()">
+    </div>
+    <div class="navbar-nav">
+        <span class="button btn-nav" (click)="goHome()">Inicio</span>
+        <div class="navbar-nav-group">
+            <span class="nav-item" (click)="dropdownListNosotros()">
+                Nosotros
+                <span class="material-icons-outlined">
+                    expand_more
+                </span>
+            </span>
+            <div *ngIf="nosotros" class="dropdown">
+                <div class="dropdown-list">
+                    <span class="dropdown-list_item" (click)="quienesSomos()">¿Quiénes somos?</span>
+                    <!-- <span class="dropdown-list_item" (click)="queOfrecemos()">¿Qué ofrecemos?</span> -->
+                </div>
+            </div>
+        </div>
+        <div class="navbar-nav-group">
+            <span class="nav-item" (click)="dropdownListServices()">
+                Servicios
+                <span class="material-icons-outlined">
+                    expand_more
+                </span>
+            </span>
+            <div *ngIf="services" class="dropdown">
+                <div class="dropdown-list">
+                    <span class="dropdown-list_item" (click)="terapiaIndividual()">Terapia individual</span>
+                    <span class="dropdown-list_item" (click)="terapiaParejas()">Terapia de pareja</span>
+                    <span class="dropdown-list_item" (click)="terapiaFamiliar()">Terapia familiar</span>
+                    <span class="dropdown-list_item" (click)="terapiaInfantil()">Terapia infantil</span>
+                    <span class="dropdown-list_item" (click)="terapiaAdolecentes()">Terapia para adolescentes</span>
+                    <span class="dropdown-list_item" (click)="cursosTalleres()">Cursos y talleres</span>
+                    <span class="dropdown-list_item" (click)="capacitaciones()">Capacitaciones</span>
+                    <span class="dropdown-list_item" (click)="saludMental()">Programas de prevención y promoción de la salud mental</span>
+                </div>
+            </div>
+        </div>
+        <span class="button btn-nav">Blog</span>
+        <button class="btn-contacto" mat-raised-button color="primary" (click)="goWhatsapp()">Contacto</button>
+    </div>
+    <div class="menu-movil">
+        <span *ngIf="!text" (click)="menuHamburguesa()" class="icon material-icons-outlined">
+            menu
+        </span>
+        <span *ngIf="text" (click)="menuHamburguesa()" class="icon material-icons-outlined">
+            close
+        </span>
+        <div *ngIf="text" class="menu-movil_content">
+            <div class="menu-movil_content-nav">
+                <div class="btn-movile" (click)="goHome()">Inicio</div>
+                <div class="nav-item">
+                    <div class="nav-item_header" (click)="dropdownListNosotros()">
+                        <span>Nosotros</span>
+                        <span *ngIf="!nosotros" class="material-icons-outlined">
+                            expand_more
+                        </span>
+                        <span *ngIf="nosotros" class="material-icons-outlined">
+                            expand_less
+                        </span>
+                    </div>
+                    <div *ngIf="nosotros" class="nav-item_content">
+                        <span class="nav-item_content-list" (click)="quienesSomos()">¿Quiénes somos?</span>
+                        <!-- <span class="nav-item_content-list" (click)="queOfrecemos()">¿Qué ofrecemos?</span> -->
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <div class="nav-item_header" (click)="dropdownListServices()">
+                        <span>Servicios</span>
+                        <span *ngIf="!services" class="material-icons-outlined">
+                            expand_more
+                        </span>
+                        <span *ngIf="services" class="material-icons-outlined">
+                            expand_less
+                        </span>
+                    </div>
+                    <div *ngIf="services" class="nav-item_content">
+                        <span class="nav-item_content-list" (click)="terapiaIndividual()">Terapia individual</span>
+                        <span class="nav-item_content-list" (click)="terapiaParejas()">Terapia de pareja</span>
+                        <span class="nav-item_content-list" (click)="terapiaFamiliar()">Terapia familiar</span>
+                        <span class="nav-item_content-list" (click)="terapiaInfantil()">Terapia infantil</span>
+                        <span class="nav-item_content-list" (click)="terapiaAdolecentes()">Terapia para adolescentes</span>
+                        <span class="nav-item_content-list" (click)="cursosTalleres()">Cursos y talleres</span>
+                        <span class="nav-item_content-list" (click)="capacitaciones()">Capacitaciones</span>
+                        <span class="nav-item_content-list" (click)="saludMental()">Programas de prevención y promoción de la saludmental</span>
+                    </div>
+                </div>
+                <div (click)="goWhatsapp()" class="btn-movile_contacto">Contacto</div>
+            </div>
+        </div>
+    </div>
+</div> 
