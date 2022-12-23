@@ -1,19 +1,43 @@
 <div class="template">
-  <div class="whatsapp" (click)="goWhatsapp()">
-      <img class="whatsapp" src="../assets/whatsapp.png" alt="whatsapp" height="70">
-  </div>
-  <div class="template-body">
-      <div class="template-body-navbar">
-          <app-navbar></app-navbar>
-      </div>
-      <div class="router">
-          <router-outlet></router-outlet>
-      </div>
-      <div class="footer">
-        <span class="material-icons-outlined">
-            mail
-        </span>
-        jheniferpinedo@gmail.com
+    <div class="desplegable">
+        <button type="button" class="btn-toggle" (click)="showRedes()">
+            <span *ngIf="moreIcon" class="icon material-icons-outlined">
+                expand_less
+            </span>
+            <span *ngIf="!moreIcon" class="icon material-icons-outlined">
+                expand_more
+            </span>
+        </button>
+        <div class="dropdown-menu_item" *ngIf="!moreIcon">
+            <a class="border-img" href="/">
+                <img class="img" src="../assets/iconF2.png" alt="" width="30">
+            </a>
+            <a class="border-img" href="https://www.instagram.com/jheniferpinedo/">
+                <img class="img" src="../assets/iconI2.png" alt="" width="30">
+            </a>
+            <a class="border-img" href="mailto:jheniferpinedo@gmail.com?Subject=Información%20sobre%20los%20servicios%20de%20psicología">
+                <img class="img" src="../assets/gmail.png" alt="" width="30">
+            </a>
+            <div class="border-img" (click)="goWhatsapp()">
+                <img class="img" src="../assets/iconW2.png" alt="" width="30">
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="whatsapp" (click)="goWhatsapp()">
+        <img class="whatsapp" src="../assets/whatsapp.png" alt="whatsapp" height="70">
+    </div>
+    <div class="template-body">
+        <div class="template-body-navbar">
+            <app-navbar></app-navbar>
+        </div>
+        <div class="router">
+            <router-outlet></router-outlet>
+        </div>
+        <div class="footer">
+            <span class="material-icons-outlined">
+                mail
+            </span>
+            jheniferpinedo@gmail.com
+        </div>
+    </div>
 </div>

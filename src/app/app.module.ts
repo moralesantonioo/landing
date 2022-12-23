@@ -18,11 +18,13 @@ import { CursosTalleresComponent } from './modules/servicios/cursos-talleres/cur
 import { CapacitacionesComponent } from './modules/servicios/capacitaciones/capacitaciones.component';
 import { SaludMentalComponent } from './modules/servicios/salud-mental/salud-mental.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 const materialComponents = [
   MatButtonModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatTooltipModule
 ]
 
 const modules = [

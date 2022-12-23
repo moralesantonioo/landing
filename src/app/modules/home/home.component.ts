@@ -9,6 +9,7 @@ import { repeat } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
   panelOpenState = false;
+  position = 'above';
 
   dataEmosiones = [
     {
@@ -231,6 +232,39 @@ export class HomeComponent implements OnInit {
           value: '560.00 soles'
         }
       ]
+    }
+  ]
+  
+  beneficios = [
+    {
+      id: 1,
+      title: 'Mejora tu Salud Mental',
+      body: 'Al igual que tu salud física, la salud mental es prioridad para nuestro buen funcionamiento, resolución de problemas y disfrute del momento presente.'
+    },
+    {
+      id: 2,
+      title: 'Monitoreo de tu Proceso',
+      body: 'Esta permitido tener conversaciones entre semana vía WhatsApp, estamos atentos a tu proceso.'
+    },
+    {
+      id: 3,
+      title: 'Horarios Flexibles',
+      body: 'Si no dispones de tiempo suficiente para asistir a una terapia presencial, la terapia Online te permite horarios que se adapten a ti y a tu tiempo. '
+    },
+    {
+      id: 4,
+      title: 'Empatía y Confianza',
+      body: 'Todo lo que abordes en tu proceso será confidencial, un profesional de la salud mental no te juzgará, crear un lazo terapéutico es primordial.'
+    },
+    {
+      id: 5,
+      title: 'Directo a la Raíz',
+      body: 'Atacamos la raíz del conflicto para que así los resultados se evidencien a largo plazo y generen un cambio significativo en tu vida.'
+    },
+    {
+      id: 6,
+      title: 'Asesoramiento Personalizado',
+      body: 'Todo en tu proceso será enfocado en ti, adaptándose a tus necesidades y objetivos personales.'
     }
   ]
 

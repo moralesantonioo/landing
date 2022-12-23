@@ -161,4 +161,38 @@
             </div>
         </div>
     </div>
+    <div class="beneficios">
+        <h1 class="title">BENEFICIOS DE LA TERAPIA EN LÍNEA</h1>
+        <h2 class="subTitle">Logra la paz emocional y relaciones más sanas con la ayuda de un especialista en Psicología
+        </h2>
+        <div class="beneficios-items">
+            <span class="beneficios-items_title">Las sesiones online te ayudan a:</span>
+            <ul>
+                <li>Encontrar nuevas perspectivas para resolver tu situación.</li>
+                <li>Dejar de sentirte solo con tus pensamientos.</li>
+                <li>Romper los obstáculos y patrones que te mantienen en la negatividad.</li>
+                <li>Lograr mayor confianza en ti mismo.</li>
+                <li>Comprender qué quieren enseñarte tus emociones para expresarte de manera más sana.</li>
+                <li>Aprender a comunicarte mejor.</li>
+                <li>Asesorías las 24 horas del día.</li>
+                <li>Atención personalizada por medio de nuestra plataforma de WhatsApp.</li>
+                <li>Flexibilidad de horarios.</li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center card-benefecio">
+                <div class="card col-sm-12 col-md-6 col-xl-3 col-lg-4 d-flex justify-content-center"
+                    *ngFor="let item of beneficios">
+                    <div class="card-header">
+                        {{item.title}}
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            {{item.body}}
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
