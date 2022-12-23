@@ -36,202 +36,310 @@
             }
         }
     }
-    .section-emociones{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
+    .section-planes{
         .title{
+            font-size: 40px;
+            margin-left: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
-            font-size: 35px;
             font-weight: bold;
-            margin: 80px 0 60px 0;
-            color: rgb(79, 79, 79);
-            font-family: 'Fredoka One', cursive;
-            line-height: 24pt;
+            line-height: 30pt;
         }
-        .section-emociones_content{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 60px;
-            .emociones{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                .title_emociones{
-                    font-size: 20px;
-                    margin-top: 15px;
+        .plan-descripcion_primary{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 16px;
+            margin: 0 20px 20px 10px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .plan-descripcion_secundary{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 16px;
+            margin: 0 20px 20px 10px;
+        }
+        .card-planes{
+            margin-bottom: 30px;
+            .card{
+                height: auto;
+                .card-header{
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    background-color: #003869;
+                    color: #fff;
                     font-weight: bold;
+                }
+                .card-body{
+                    .card-text{
+                        font-size:  16px;
+                        text-align: center;
+                        line-height: 20pt;
+                        padding: 10px 0;
+                    }
+                    .card-text_time{
+                        margin: 40px 0 20px 0;
+                        font-size: 19px;
+                        font-weight: bold;
+                        font-style: italic;
+                        .value{
+                            font-size: 15px;
+                            font-weight: normal;
+                        }
+                    }
+                    .card-text_price{
+                        margin: 10px 0 20px 0;
+                        font-size: 19px;
+                        font-style: italic;
+                        font-weight: bold;
+                        .value{
+                            font-size: 15px;
+                            font-weight: normal;
+                        }
+                    }
+                    .card-text_price--group{
+                        display: flex;
+                        padding-left: 50px;
+                        font-size: 16px;
+                        gap: 10px;
+                        font-weight: bold;
+                        line-height: 10pt;
+                        .value{
+                            font-weight: normal;
+                        }   
+                    }
                 }
             }
         }
     }
-    .text_section-secundary{
-        text-align: center;
-        font-size: 30px;
-        font-weight: bold;
-        margin: 80px 0 60px 0;
-        color: rgb(79, 79, 79);
-        margin: 9rem 0 60px 0;
-        font-family: 'Fredoka One', cursive;
-    }   
-    .section-secundary{
+
+    
+
+    .color-fondo{
+        padding: 100px 0;
+        background-color:rgb(233, 233, 233);
+        .title{
+            font-size: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-weight: bold;
+            line-height: 30pt;
+        }
+    
+        .sub-title{
+            font-size: 20px;
+            margin: 50px 0 20px 10px;
+            font-weight: bold;
+            line-height: 20pt;
+            color: rgb(95, 95, 95);
+        }
+    }
+    
+    .mat-accordion{
         width: 100%;
+        justify-content: center;
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-        .section-items{
-            width: 250px;
-            height: 250px;
-            border-radius: 15px;
-            background-color: rgba(68,0,153,0.06);
-            box-shadow: 1px 4px 10px rgb(208, 168, 243);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 15px;
-            text-align: center;
-            padding: 0 40px;
-            .title{
-                font-weight: bold;
-                font-size: 18px;
-                line-height: 20pt; 
-            }
-            .numero{
-                font-size: 40px;
-                margin-top: 10px;
-            }
-        }
-    } 
-    .text_section-terciario{
-        text-align: center;
-        font-size: 30px;
-        font-weight: bold;
-        margin: 9rem 0 60px 0;
-        color: rgb(79, 79, 79);
-        line-height: 18pt; 
-        font-family: 'Fredoka One', cursive;
-    } 
-    .section-terciario{
-        width: 100%;
-        .section-terciario_group{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-            .section-items{
-                width: 250px;
-                height: 250px;
-                border-radius: 15px;
-                background-color: rgba(68,0,153,0.06);
-                box-shadow: 1px 4px 10px rgb(208, 168, 243);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-direction: column;
-                gap: 30px;
-                text-align: center;
-                padding: 0 10px;
-                .title{
-                    font-weight: bold;
-                    font-size: 18px;
-                    line-height: 15pt; 
-                }
-                .numero{
-                    font-size: 50px;
-                }
-                .btn-contacto{
-                    border-radius: 30px;
-                    font-size: 12px;
-                }
-            }
-        } 
+        padding: 0 10px;
     }
+    .mat-expansion-panel-header {
+        background-color: #003869;
+    }
+
+    .mat-body p, .mat-body-1 p, .mat-typography .mat-body p, .mat-typography .mat-body-1 p, .mat-typography p{
+        color: #000;
+    }
+
+    .mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover{
+        background-color: #003869;
+    }
+    .mat-accordion .mat-expansion-panel{
+        border-radius: 30px;
+        margin: 5px 0;
+        color: #000;
+        background-color: #fff;
+        width: 100%;
+    }
+
+    .section-ofrecemos {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 50px 0;
+        background-color:rgb(233, 233, 233);
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 9rem 0 20px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 38px;
+        }
+        .card-title{
+            font-size: 18px;
+            line-height: 22pt;
+            font-weight: bold;
+        }
+        .btn-primary{
+            background-color: #003869;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+    }
+    .agendar-sesion{
+        display: flex;
+        flex-direction: column;
+        .title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 9rem 0 20px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        .subTitle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 0 20px 0;
+            text-align: center;
+            font-size: 20px;
+            color: rgb(129, 129, 129);
+        }
+        .description{
+            font-size: 14px;
+            margin: 30px 0;
+        }
+        .text-agendar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 70px 0 20px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+        .card-title{
+            font-size: 20px;
+            line-height: 22pt;
+            font-weight: bold;
+        }
+        .image{
+            height: 200px;
+        }
+        .card-body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .card-text{
+            font-size: 13px;
+        }
+    }
+
 }
 
-@media (min-width: 768px){
+@media (min-width: 1300px){
     .general {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
         .section-principal{
-            flex-direction: row;
-            .img{
-                max-width: 50%;
-               // height: 100vh;
-            }
-            .title-principal{
-            }
-        }
-        .text_section-secundary{
-            font-size: 60px;
-            font-weight: bold;
-            line-height: 40pt; 
-        }  
-        .text_section-terciario{
-            font-size: 60px;
-            font-weight: bold;
-        }
-        .section-emociones{
-            .title{
-                text-align: center;
-                font-size: 60px;
-                font-weight: bold;
-                margin: 80px 0 60px 0;
-                color: rgb(79, 79, 79);
-            }
-            .section-emociones_content{
-                grid-template-columns: repeat(4, 1fr);
-            }
-        }
-        .section-secundary{
-            flex-direction: row;
-            gap: 100px;
-            .section-items{
-                transform: scale(var(--escala, 1));
-                transition: transform 0.25s;
-                &:hover{
-                    --escala: 1.2;
-                    cursor:pointer;
+            position: relative;
+            .image{
+                background-color: #000;
+                .img{
+                    max-width: 100%;
+                    opacity: 0.5;
+                   // height: 100vh;
                 }
-                .title{
-                    font-size: 20px;
+                .texto-principal{
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 0;
+                    left: -150px;
+                    color: #fff;
+                    width: 80%;
+                    .title{
+                        font-size: 60px;
+                        font-family: 'Fredoka One', cursive;
+                        font-weight: bold;
+                        line-height: 45pt;
+                    }
+                    .texto-secundario{
+                        font-size: 50px;
+                        margin: 20px 0;
+                    }
+                    .descripcion{
+                        font-size: 20px;
+                        line-height: 22pt;
+                        margin-top: 15px;
+                    }
                 }
-                .numero{
-                    font-size: 40px;
+                .btn{
+                    margin-top: 30px;
+                    .btn-contacto{
+                        border-radius: 30px;
+                        font-size: 40px;
+                        background: rebeccapurple;
+                        font-family: 'Fredoka One', cursive;
+                        padding: 10px 15px;
+                        font-size: 20px;
+                        &:hover{
+                            background: rgb(125, 71, 178);
+                        }
+                    }
                 }
-            }
-        } 
-        .section-terciario{
-            width: 100%;
+            }  
+           
+        }
+        .mat-accordion .mat-expansion-panel{
+            border-radius: 30px;
+            margin: 5px 0;
+            color: #000;
+            background-color: #fff;
+            width: 900px;
+        }
+        .sub-title{
             display: flex;
             justify-content: center;
             align-items: center;
-            .section-terciario_group{
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-gap: 103px;
-                .section-items{
-                    transform: scale(var(--escala, 1));
-                    transition: transform 0.25s;
-                    &:hover{
-                        --escala: 1.2;
-                        cursor:pointer;
-                    }
-                    .title{
-                        font-size: 18px;
-                    }
-                    .numero{
-                        font-size: 40px;
-                    }
-                }
+            margin-left: -29rem;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 20pt;
+            color: rgb(129, 129, 129);
+        }
+        .agendar-sesion{
+            .image{
+                height: 280px;
+            }
+            .title{
+                font-size: 40px;
+            }
+            .subTitle{
+                font-size: 25px;
+            }
+            .text-agendar{
+                font-size: 35px;
+            }
+            .description{
+                font-size: 16px;
             }
         }
     }

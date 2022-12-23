@@ -17,10 +17,12 @@ import { TerapiaAdolecentesComponent } from './modules/servicios/terapia-adolece
 import { CursosTalleresComponent } from './modules/servicios/cursos-talleres/cursos-talleres.component';
 import { CapacitacionesComponent } from './modules/servicios/capacitaciones/capacitaciones.component';
 import { SaludMentalComponent } from './modules/servicios/salud-mental/salud-mental.component';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 const materialComponents = [
-  MatButtonModule
+  MatButtonModule,
+  MatExpansionModule
 ]
 
 const modules = [

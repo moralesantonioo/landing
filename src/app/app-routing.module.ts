@@ -56,6 +56,10 @@ const routes: Routes = [
   {
     path: 'servicios/salud-mental',
     component: SaludMentalComponent
+  },
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];
 

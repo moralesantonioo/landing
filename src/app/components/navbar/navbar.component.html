@@ -1,6 +1,6 @@
 <div class="navbar">
     <div class="logo">
-        <img src="../../../assets/logo2.png" alt="" width="200" (click)="goHome()">
+        <img src="../../../assets/logo-secundario.jpg" alt="" width="85" (click)="goHome()">
     </div>
     <div class="navbar-nav">
         <span class="button btn-nav" (click)="goHome()">Inicio</span>
@@ -21,7 +21,7 @@
         <div class="navbar-nav-group">
             <span class="nav-item" (click)="dropdownListServices()">
                 Servicios
-                <span class="material-icons-outlined"> 
+                <span class="material-icons-outlined">
                     expand_more
                 </span>
             </span>
@@ -34,11 +34,22 @@
                     <span class="dropdown-list_item" (click)="terapiaAdolecentes()">Terapia para adolescentes</span>
                     <span class="dropdown-list_item" (click)="cursosTalleres()">Cursos y talleres</span>
                     <span class="dropdown-list_item" (click)="capacitaciones()">Capacitaciones</span>
-                    <span class="dropdown-list_item" (click)="saludMental()">Programas de prevención y promoción de la salud mental</span>
+                    <span class="dropdown-list_item" (click)="saludMental()">Programas de prevención y promoción de la
+                        salud mental</span>
                 </div>
             </div>
         </div>
-        <span class="button btn-nav">Blog</span>
+        <div class="redes">
+            <a class="redes-icon" href="">
+                <img src="../../../assets/facebook.png" alt="" width="20">
+            </a>
+            <a class="redes-icon" href="https://www.instagram.com/jheniferpinedo/">
+                <img src="../../../assets/instagram.png" alt="" width="20">
+            </a>
+            <a class="redes-icon" href="mailto:jheniferpinedo@gmail.com?Subject=Información%20sobre%20los%20servicios%20de%20psicología">
+                <img src="../../../assets/gmail.png" alt="" width="20">
+            </a>
+        </div>
         <button class="btn-contacto" mat-raised-button color="primary" (click)="goWhatsapp()">Contacto</button>
     </div>
     <div class="menu-movil">
@@ -81,14 +92,16 @@
                         <span class="nav-item_content-list" (click)="terapiaParejas()">Terapia de pareja</span>
                         <span class="nav-item_content-list" (click)="terapiaFamiliar()">Terapia familiar</span>
                         <span class="nav-item_content-list" (click)="terapiaInfantil()">Terapia infantil</span>
-                        <span class="nav-item_content-list" (click)="terapiaAdolecentes()">Terapia para adolescentes</span>
+                        <span class="nav-item_content-list" (click)="terapiaAdolecentes()">Terapia para
+                            adolescentes</span>
                         <span class="nav-item_content-list" (click)="cursosTalleres()">Cursos y talleres</span>
                         <span class="nav-item_content-list" (click)="capacitaciones()">Capacitaciones</span>
-                        <span class="nav-item_content-list" (click)="saludMental()">Programas de prevención y promoción de la saludmental</span>
+                        <span class="nav-item_content-list" (click)="saludMental()">Programas de prevención y promoción
+                            de la saludmental</span>
                     </div>
                 </div>
                 <div (click)="goWhatsapp()" class="btn-movile_contacto">Contacto</div>
             </div>
         </div>
     </div>
-</div> 
+</div>
