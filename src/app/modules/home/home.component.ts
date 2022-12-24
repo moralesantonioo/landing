@@ -10,6 +10,7 @@ import { repeat } from 'rxjs';
 export class HomeComponent implements OnInit {
   panelOpenState = false;
   position = 'above';
+  value: string = ''
 
   dataEmosiones = [
     {
@@ -271,6 +272,7 @@ export class HomeComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    console.log('sfdsf', this.value)
     setInterval(() => {
       this.dataContador.map((res) => {
         if (res.min < res.max) {
