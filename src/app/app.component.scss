@@ -3,12 +3,15 @@
     height: auto;
     .desplegable{
         .btn-toggle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: fixed;
             right: 20px;
             bottom: 20px;
             cursor: pointer;
             border-radius: 50%;
-            background-color: #003869;
+            background-color: #28537b;
             box-shadow: 5px 10px 36px -2px rgba(0,0,0,0.75);
             -webkit-box-shadow: 5px 10px 36px -2px rgba(0,0,0,0.75);
             -moz-box-shadow: 5px 10px 36px -2px rgba(0,0,0,0.75);
@@ -32,7 +35,7 @@
             flex-direction: column;
             gap: 8px;
             .border-img{
-                background-color: #003869;
+                background-color: #28537b;
                 padding: 10px;
                 border-radius: 50%;
             }
@@ -69,7 +72,7 @@
     .footer{
         width: 100%;
         height: 80px;
-        background-color: #825aef;
+        background-color: #003869;
         display: flex;
         justify-content: center;
         align-items: center;
