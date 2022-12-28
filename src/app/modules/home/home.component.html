@@ -195,22 +195,35 @@
             </div>
         </div>
     </div>
-    <div class="formulario">
-        <h1 class="title">Contáctame</h1>
-        <form class="form" action="https://formsubmit.co/antoniomal2399@gmail.com" method="POST">
-            <span class="label">Nombre y Apellidos *</span>
-            <input class="form-control" type="text" name="Nombre" placeholder="Nombre">
-            <span class="label">Correo Electrónico *</span>
-            <input class="form-control" type="email" name="Email" placeholder="Correo electrónico">
-            <span class="label">Teléfono *</span>
-            <input class="form-control" type="text" name="Telefono" placeholder="Teléfono">
-            <span class="label">Mensaje *</span>
-            <textarea class="form-control" name="Mensaje" id="" cols="30" rows="5" placeholder="Mensaje"></textarea>
-            <button class="btn-enviar" type="submit">Enviar</button>
+    <div class="formulario-general d-flex justify-content-center">
+        <div class="formulario">
+            <h1 class="title">Contáctame</h1>
+            <form id="form" class="form" [formGroup]="form">
+                <span class="label">Nombre y Apellidos *</span>
+                <input class="form-control" type="text" name="name" id="name" placeholder="Nombre"
+                    formControlName="name">
+                <span class="label">Correo Electrónico *</span>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Correo electrónico"
+                    formControlName="email">
+                <span class="label">Teléfono *</span>
+                <input class="form-control" type="text" name="telefono" id="telefono" placeholder="Teléfono"
+                    formControlName="telefono">
+                <span class="label">Mensaje *</span>
+                <textarea class="form-control" maxlength="300" name="mensaje" id="mensaje" cols="30" rows="4"
+                    (keyup)="onKey($event)" placeholder="Mensaje" formControlName="mensaje"></textarea>
+                <span class="caracteres" id="contador">Número de caracteres {{contador}}/300</span>
 
-            <!-- <input type="hidden" name="_next" value="http://localhost:4200/"> -->
-            <input type="hidden" name="_next" value="https://jhenifer-pinedo.vercel.app/">
-            <input type="hidden" name="_captcha" value="false"> 
-        </form>
+                <button *ngIf="!loading" [disabled]="form.invalid" class="btn-enviar"
+                    [ngClass]="{'disabled': form.invalid}" (click)="enviarData()">Enviar</button>
+                <span *ngIf="loading">Enviando...</span>
+            </form>
+            <div class="notification" *ngIf="notificacion">
+                <span class="material-icons-outlined">
+                    check_circle
+                </span>
+                <span>El formulario fué enviado con exito.</span>
+            </div>
+        </div>
     </div>
 </div>
+

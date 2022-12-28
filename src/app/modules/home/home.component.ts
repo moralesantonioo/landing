@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { fakeAsync } from '@angular/core/testing';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { repeat } from 'rxjs';
 
@@ -11,60 +14,42 @@ export class HomeComponent implements OnInit {
   panelOpenState = false;
   position = 'above';
   value: string = ''
+  form: FormGroup;
+  loading: boolean = false;
+  contador: number = 0
+  notificacion: boolean = false;
 
-  dataEmosiones = [
-    {
-      id: 1,
-      img: '../../../assets/feliz.png',
-      title: 'Feliz',
-    },
-    {
-      id: 2,
-      img: '../../../assets/triste.png',
-      title: 'Triste',
-    },
-    {
-      id: 3,
-      img: '../../../assets/enojado.png',
-      title: 'Enojado',
-    },
-    {
-      id: 3,
-      img: '../../../assets/terrible.png',
-      title: 'Terrible',
-    }
-  ]
-
-  dataContador = [
-    {
-      id: 1,
-      img: '../../../assets/pacientes.png',
-      title: 'Pacientes atendidos',
-      min: 0,
-      max: 1300,
-    },
-    {
-      id: 2,
-      img: '../../../assets/experiencia.png',
-      title: 'Años de experiencia',
-      min: 0,
-      max: 7,
-    },
-    {
-      id: 3,
-      img: '../../../assets/condicion.png',
-      title: 'Mejoraron su condición',
-      min: 0,
-      max: 90,
-    },
-    {
-      id: 3,
-      img: '../../../assets/tiktok.png',
-      title: 'Seguidores en tiktok',
-      min: 0,
-      max: 375,
-    }
-  ]
+  /* 
+    dataContador = [
+      {
+        id: 1,
+        img: '../../../assets/pacientes.png',
+        title: 'Pacientes atendidos',
+        min: 0,
+        max: 1300,
+      },
+      {
+        id: 2,
+        img: '../../../assets/experiencia.png',
+        title: 'Años de experiencia',
+        min: 0,
+        max: 7,
+      },
+      {
+        id: 3,
+        img: '../../../assets/condicion.png',
+        title: 'Mejoraron su condición',
+        min: 0,
+        max: 90,
+      },
+      {
+        id: 3,
+        img: '../../../assets/tiktok.png',
+        title: 'Seguidores en tiktok',
+        min: 0,
+        max: 375,
+      }
+    ] */
 
   servicios = [
     {
@@ -235,7 +220,7 @@ export class HomeComponent implements OnInit {
       ]
     }
   ]
-  
+
   beneficios = [
     {
       id: 1,
@@ -269,19 +254,51 @@ export class HomeComponent implements OnInit {
     }
   ]
 
-  constructor(private router: Router) { }
+  data = {
+    name: '',
+    email: '',
+    telefono: '',
+    mensaje: ''
+  }
+
+  constructor(private router: Router, private fb: FormBuilder, private http: HttpClient) {
+    this.form = this.fb.group({
+      name: ['', Validators.required],
+      email: ['', Validators.required],
+      telefono: ['', Validators.required],
+      mensaje: ['', Validators.required]
+    })
+  }
 
   ngOnInit(): void {
-    console.log('sfdsf', this.value)
-    setInterval(() => {
+    /* setInterval(() => {
       this.dataContador.map((res) => {
         if (res.min < res.max) {
           res.min++
         }
       })
-    }, 40)
-
+    }, 40) */
   }
+
+  onKey(event: any) {
+    this.contador = event.target.value.length
+  }
+
+  enviarData() {
+    this.loading = true;
+    this.notificacion = true;
+    this.http.post('https://formspree.io/f/xzbqpkaz', this.form.value).subscribe((res: any) => {
+      this.loading = false;
+      setTimeout(() => {
+        this.notificacion = false;
+      }, 3000)
+      if (res.ok) {
+        this.form.reset();
+        this.contador = 0;
+      }
+    })
+  }
+
 
   goWhatsapp() {
     const url = 'https://api.whatsapp.com/send?phone=+51972676287&text=¡Hola!, quisiera obtener información sobre los servicios de psicología.'

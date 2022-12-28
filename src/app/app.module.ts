@@ -19,6 +19,8 @@ import { CapacitacionesComponent } from './modules/servicios/capacitaciones/capa
 import { SaludMentalComponent } from './modules/servicios/salud-mental/salud-mental.component';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 const materialComponents = [
@@ -51,7 +53,9 @@ const modules = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ...materialComponents
+    ...materialComponents,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

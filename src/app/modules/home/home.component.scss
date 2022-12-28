@@ -322,52 +322,86 @@
             }
         }
     }
-    .formulario{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: 100px 0;
-        .title{
-            font-size: 40px;
-            font-weight: bold;
-        }
-        .form{
+    .formulario-general{
+        .formulario{
             width: 100%;
-            margin: 0 10px;
-            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            gap: 10px;
-            .label{
+            margin: 100px 0;
+            .title{
+                font-size: 40px;
+                font-weight: bold;
+            }
+            .form{
                 width: 100%;
-                font-size: 14px;
+                margin: 0 10px;
+                padding: 20px;
                 display: flex;
-                justify-content: flex-start;
-                margin-bottom: -8px;
-                margin-top: 20px;
-                font-family: 'Fredoka One', cursive;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+                .label{
+                    width: 100%;
+                    font-size: 14px;
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-bottom: -8px;
+                    margin-top: 20px;
+                    font-family: 'Fredoka One', cursive;
+                }
+                .form-control{
+                    width: 100%;
+                    outline: none;
+                    border: 1px solid #003869;
+                    color: #000;
+                }
+                .btn-enviar{
+                    width: 100%;
+                    padding: 10px 0;
+                    border-radius: 30px;
+                    background-color: #003869;
+                    color: #fff;
+                    border: none;
+                }
+                .caracteres{
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    color: #5B5E61;
+                    margin-bottom: 30px;
+                    font-size: 10px;
+                }
+                .disabled {
+                    background: #D8DBDE;
+                    color: #919599;
+                }
+                
             }
-            .form-control{
-                width: 100%;
-                outline: none;
-                border: 1px solid #003869;
-                color: #000;
-            }
-            .btn-enviar{
-                width: 100%;
-                padding: 10px 0;
-                border-radius: 30px;
-                background-color: #003869;
-                color: #fff;
-                border: none;
-            }
+            
         }
     }
+    
 }
+
+.notification{
+    width: 380px;
+    height: 50px;
+    background: #E5F6EC;
+    box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12), 0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+    border-radius: 8px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    color: #23A06A;
+    padding: 10px;
+}
+
+
 
 @media (min-width: 1300px){
     .general {
@@ -469,53 +503,77 @@
                 margin-left: 15rem;
             }
         }
-        .formulario{
-            width: 900px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin: 100px 0;
-            margin-left: 24rem;
-            .title{
-                font-size: 40px;
-                font-weight: bold;
-                padding: 0 0 50px 0;
-            }
-            .form{
-                box-shadow: 20px 12px 120px -5px rgb(0 56 105 / 25%);
-                width: 100%;
-                margin: 0 10px;
-                padding: 20px;
+        .formulario-general{
+            .formulario{
+                width: 900px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                gap: 10px;
-                .label{
+                margin: 100px 0;
+               
+                .title{
+                    font-size: 40px;
+                    font-weight: bold;
+                    padding: 0 0 50px 0;
+                }
+                .form{
+                    box-shadow: 20px 12px 120px -5px rgb(0 56 105 / 25%);
                     width: 100%;
-                    font-size: 14px;
+                    margin: 0 10px;
+                    padding: 20px;
                     display: flex;
-                    justify-content: flex-start;
-                    margin-bottom: -8px;
-                    margin-top: 20px;
-                    font-family: 'Fredoka One', cursive;
-                }
-                .form-control{
-                    width: 100%;
-                    outline: none;
-                    border: 1px solid #003869;
-                    color: #000;
-                }
-                .btn-enviar{
-                    width: 100%;
-                    padding: 10px 0;
-                    border-radius: 30px;
-                    background-color: #003869;
-                    color: #fff;
-                    border: none;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 10px;
+                    .label{
+                        width: 100%;
+                        font-size: 14px;
+                        display: flex;
+                        justify-content: flex-start;
+                        margin-bottom: -8px;
+                        margin-top: 20px;
+                        font-family: 'Fredoka One', cursive;
+                    }
+                    .form-control{
+                        width: 100%;
+                        outline: none;
+                        border: 1px solid #003869;
+                        color: #000;
+                    }
+                    .btn-enviar{
+                        width: 100%;
+                        padding: 10px 0;
+                        border-radius: 30px;
+                        background-color: #003869;
+                        color: #fff;
+                        border: none;
+                    }
+                    .disabled {
+                        background: #D8DBDE;
+                        color: #919599;
+                    }
                 }
             }
         }
+    }
+
+    .notification{
+        width: 380px;
+        height: 50px;
+        background: #E5F6EC;
+        box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12), 0px 8px 16px -6px rgba(24, 39, 75, 0.08);
+        border-radius: 8px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        color: #23A06A;
+        padding: 10px;
     }
 }
