@@ -1,8 +1,12 @@
-.template{
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300&display=swap');
+
+.template {
     width: 100%;
     height: auto;
-    .desplegable{
-        .btn-toggle{
+
+    .desplegable {
+        .btn-toggle {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -12,19 +16,21 @@
             cursor: pointer;
             border-radius: 50%;
             background-color: #28537b;
-            box-shadow: 5px 10px 36px -2px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 5px 10px 36px -2px rgba(0,0,0,0.75);
-            -moz-box-shadow: 5px 10px 36px -2px rgba(0,0,0,0.75);
+            box-shadow: 5px 10px 36px -2px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 5px 10px 36px -2px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 5px 10px 36px -2px rgba(0, 0, 0, 0.75);
             z-index: 10;
             border: none;
             color: #FFF;
             width: 60px;
             height: 60px;
         }
-        .icon{
+
+        .icon {
             font-size: 35px;
         }
-        .dropdown-menu_item{
+
+        .dropdown-menu_item {
             z-index: 10;
             position: fixed;
             right: 26px;
@@ -34,42 +40,81 @@
             display: flex;
             flex-direction: column;
             gap: 8px;
-            .border-img{
+
+            .border-img {
                 background-color: #28537b;
                 padding: 10px;
                 border-radius: 50%;
             }
-            .img{
-                
-            }
+
+            .img {}
         }
     }
-    .whatsapp{
+
+    .whatsapp {
         position: fixed;
         right: 20px;
         bottom: 20px;
         cursor: pointer;
         border-radius: 50%;
         background-color: #fff;
-        box-shadow: 5px 10px 36px -2px rgba(0,0,0,0.75);
-        -webkit-box-shadow: 5px 10px 36px -2px rgba(0,0,0,0.75);
-        -moz-box-shadow: 5px 10px 36px -2px rgba(0,0,0,0.75);
+        box-shadow: 5px 10px 36px -2px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 5px 10px 36px -2px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 5px 10px 36px -2px rgba(0, 0, 0, 0.75);
         z-index: 10;
         display: none;
     }
-    .template-body{
+
+    .template-body {
         display: flex;
         flex-direction: column;
         width: 100%;
         height: calc(100% - 88px);
-        .template-body-navbar{
+
+        .template-body-navbar {
             height: 88px;
         }
-        .router{
+
+        .router {
             height: calc(100% - 88px);
+
+            .loader {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: #003869;
+                z-index: 10;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: #fff;
+                gap: 20px;
+                font-weight: 800;
+                .spinner-border {
+                    height: 50px;
+                    width: 50px;
+                    margin-top: 30px;
+                }
+
+                .title {
+                    font-family: 'Unbounded', cursive;
+                    font-size: 40px;
+                }
+
+                .sub-title {
+                    font-size: 25px;
+                    font-family: 'Playfair Display', serif;
+                }
+            }
         }
     }
-    .footer{
+
+    .footer {
         width: 100%;
         height: 80px;
         background-color: #003869;
@@ -83,12 +128,14 @@
     }
 }
 
-@media (min-width: 1300px){
-    .template{
-        .desplegable{
+
+@media (min-width: 1300px) {
+    .template {
+        .desplegable {
             display: none;
         }
-        .whatsapp{
+
+        .whatsapp {
             display: block;
         }
     }

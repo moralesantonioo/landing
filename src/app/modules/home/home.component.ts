@@ -287,7 +287,7 @@ export class HomeComponent implements OnInit {
   enviarData() {
     this.loading = true;
     this.notificacion = true;
-    this.http.post('https://formspree.io/f/xzbqpkaz', this.form.value).subscribe((res: any) => {
+    this.http.post('https://formspree.io/f/xeqwjwnv', this.form.value).subscribe((res: any) => {
       this.loading = false;
       setTimeout(() => {
         this.notificacion = false;

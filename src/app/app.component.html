@@ -15,7 +15,8 @@
             <a class="border-img" href="https://www.instagram.com/jheniferpinedo/">
                 <img class="img" src="../assets/iconI2.png" alt="" width="30">
             </a>
-            <a class="border-img" href="mailto:jheniferpinedo@gmail.com?Subject=Información%20sobre%20los%20servicios%20de%20psicología">
+            <a class="border-img"
+                href="mailto:jheniferpinedo@gmail.com?Subject=Información%20sobre%20los%20servicios%20de%20psicología">
                 <img class="img" src="../assets/gmail.png" alt="" width="30">
             </a>
             <div class="border-img" (click)="goWhatsapp()">
@@ -31,7 +32,16 @@
             <app-navbar></app-navbar>
         </div>
         <div class="router">
-            <router-outlet></router-outlet>
+            <router-outlet>
+                <div class="loader" *ngIf="loader">
+                    <!--  <mat-progress-bar mode="indeterminate"></mat-progress-bar> -->
+                    <span class="title">Jhenifer Pinedo</span>
+                    <span class="sub-title">Psicóloga Clínica</span>
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+            </router-outlet>
         </div>
         <div class="footer">
             <span class="material-icons-outlined">

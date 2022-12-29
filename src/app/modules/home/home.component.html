@@ -99,68 +99,6 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid color-fondo">
-        <h1 class="title">PREGUNTAS FRECUENTES</h1>
-        <div>
-            <mat-accordion>
-                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
-                    *ngFor="let item of questions">
-                    <mat-expansion-panel-header class="mat-expansion-panel-header2" *ngIf="!item.infoExtra">
-                        <mat-panel-title>
-                            {{item.title}}
-                        </mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <p>{{item.body}}</p>
-                </mat-expansion-panel>
-            </mat-accordion>
-        </div>
-        <h3 class="sub-title">INFORMACIÓN EXTRA DE TERAPIA DE PAREJA</h3>
-        <div>
-            <mat-accordion *ngFor="let item of questions">
-                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
-                    *ngFor="let item2 of item.infoExtra">
-                    <mat-expansion-panel-header class="mat-expansion-panel-header2">
-                        <mat-panel-title>
-                            {{item2.title}}
-                        </mat-panel-title>
-                    </mat-expansion-panel-header>
-                    <p>{{item2.body}}</p>
-                </mat-expansion-panel>
-            </mat-accordion>
-        </div>
-    </div>
-    <div class="agendar-sesion container-fluid d-flex justify-content-center">
-        <h1 class="title">¿CÓMO AGENDO MI SESIÓN?</h1>
-        <h2 class="subTitle">¡FELICIDADES POR TOMAR ESTA DECISIÓN, ESTAS CADA VEZ MÁS CERCA!</h2>
-        <span class="description">
-            El proceso terapéutico te brindará las herramientas necesarias para mejorar tu bienestar emocional. Lo más
-            importante en un proceso es tu disposición y constancia. La terapia online se adapta a tu tiempo, en un
-            horario amplio de <strong>lunes a domingo</strong> entre las<strong>7:00 am a 11:00</strong> pm. Aquí
-            encontraras la raíz de tus problemas, el detonante que ocasiona tu ansiedad, depresión,dependencia, pánico,
-            apegos, dependencia emocional, entre otros.
-        </span>
-        <h1 class="text-agendar">AGENDA TU SESIÓN EN 3 PASOS</h1>
-        <div class="container-fluid">
-            <div class="row d-flex justify-content-center">
-                <div class="card m-3 col-sm-12 col-md-6 col-xl-3 col-lg-4 d-flex justify-content-center"
-                    *ngFor="let item of agendaCita">
-                    <div class="row g-0">
-                        <div class="col-md-4 d-flex justify-content-center py-5 align-justify-content image">
-                            <img src="{{item.img}}" class="img-fluid rounded-start" alt="..." width="150">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">{{item.title}}</h5>
-                                <p class="card-text">
-                                    {{item.body}}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="beneficios">
         <h1 class="title">BENEFICIOS DE LA TERAPIA EN LÍNEA</h1>
         <h2 class="subTitle">Logra la paz emocional y relaciones más sanas con la ayuda de un especialista en Psicología
@@ -195,6 +133,39 @@
             </div>
         </div>
     </div>
+    <div class="agendar-sesion container-fluid d-flex justify-content-center">
+        <h1 class="title">¿CÓMO AGENDO MI SESIÓN?</h1>
+        <h2 class="subTitle">¡FELICIDADES POR TOMAR ESTA DECISIÓN, ESTAS CADA VEZ MÁS CERCA!</h2>
+        <span class="description">
+            El proceso terapéutico te brindará las herramientas necesarias para mejorar tu bienestar emocional. Lo más
+            importante en un proceso es tu disposición y constancia. La terapia online se adapta a tu tiempo, en un
+            horario amplio de <strong>lunes a domingo</strong> entre las<strong>7:00 am a 11:00</strong> pm. Aquí
+            encontraras la raíz de tus problemas, el detonante que ocasiona tu ansiedad, depresión,dependencia, pánico,
+            apegos, dependencia emocional, entre otros.
+        </span>
+        <h1 class="text-agendar">AGENDA TU SESIÓN EN 3 PASOS</h1>
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-center">
+                <div class="card m-3 col-sm-12 col-md-6 col-xl-3 col-lg-4 d-flex justify-content-center"
+                    *ngFor="let item of agendaCita">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex justify-content-center py-5 align-justify-content image">
+                            <img src="{{item.img}}" class="img-fluid rounded-start" alt="..." width="150">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{item.title}}</h5>
+                                <p class="card-text">
+                                    {{item.body}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="formulario-general d-flex justify-content-center">
         <div class="formulario">
             <h1 class="title">Contáctame</h1>
@@ -223,6 +194,36 @@
                 </span>
                 <span>El formulario fué enviado con exito.</span>
             </div>
+        </div>
+    </div>
+    <div class="container-fluid color-fondo">
+        <h1 class="title">PREGUNTAS FRECUENTES</h1>
+        <div>
+            <mat-accordion>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                    *ngFor="let item of questions">
+                    <mat-expansion-panel-header class="mat-expansion-panel-header2" *ngIf="!item.infoExtra">
+                        <mat-panel-title>
+                            {{item.title}}
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p>{{item.body}}</p>
+                </mat-expansion-panel>
+            </mat-accordion>
+        </div>
+        <h3 class="sub-title">INFORMACIÓN EXTRA DE TERAPIA DE PAREJA</h3>
+        <div>
+            <mat-accordion *ngFor="let item of questions">
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+                    *ngFor="let item2 of item.infoExtra">
+                    <mat-expansion-panel-header class="mat-expansion-panel-header2">
+                        <mat-panel-title>
+                            {{item2.title}}
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p>{{item2.body}}</p>
+                </mat-expansion-panel>
+            </mat-accordion>
         </div>
     </div>
 </div>

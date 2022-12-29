@@ -34,14 +34,14 @@ export class NavbarComponent implements OnInit {
   }
 
   goHome(){
-    this.router.navigate(['']);
+    this.router.navigate(['inicio']);
     this.text = false
     this.nosotros = false
     this.services = false
   }
 
   quienesSomos(){
-    this.router.navigate(['nosotros/quienes-somos']);
+    this.router.navigate(['/nosotros/quienes-somos']);
     this.nosotros = false
     this.text = false
     this.services = false
