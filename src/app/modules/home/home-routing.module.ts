@@ -7,8 +7,12 @@ const routes: Routes = [
         path: '',
         children: [
             {
-                path: 'inicio',
+                path: '',
                 component: HomeComponent
+            },
+            {
+                path: '**',
+                redirectTo: 'inicio'
             }
         ]
     }
