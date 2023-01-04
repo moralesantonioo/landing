@@ -56,48 +56,56 @@ export class HomeComponent implements OnInit {
       id: 1,
       img: '../../../assets/t-individual.jpg',
       title: 'Terapia individual',
+      contenido: 'Expertos en ansiedad, depresión, ataques de pánico, dependencia emocional, entre otros. Sesiones de alta intensidad enfocadas en crear la mejor versión de ti. ',
       url: 'servicios/teparia-individual'
     },
     {
       id: 2,
       img: '../../../assets/t-pareja.jpg',
       title: 'Terapia de pareja',
+      contenido: 'Especialistas en celotipia, infidelidad, inseguridad, lucha de poderes, mala comunicación, impulsividad, agresividad, entre otros. ',
       url: 'servicios/teparia-de-parejas'
     },
     {
       id: 3,
       img: '../../../assets/t-familia.jpg',
       title: 'Terapia familiar',
+      contenido: 'Especialistas en dinámica familiar, heridas de la infancia, vacíos emocionales, tipos de apego, estilos de crianza, entre otros. ',
       url: 'servicios/teparia-familiar'
     },
     {
       id: 4,
       img: '../../../assets/t-infantil2.jpg',
       title: 'Terapia infantil',
+      contenido: 'Expertos en modificación de conducta, problemas de atención y concentración, control de emociones, ansiedad, depresión en niños, entre otros.',
       url: 'servicios/teparia-infantil'
     },
     {
       id: 5,
       img: '../../../assets/t-adolecentes.jpg',
       title: 'Terapia para adolescentes',
+      contenido: 'Expertos en modificación conductual, control de impulsos y emociones, relaciones interpersonales e intrapersonales, entre otros. ',
       url: 'servicios/teparia-para-adolecentes'
     },
     {
       id: 6,
       img: '../../../assets/cursosytalleres.jpg',
       title: 'Cursos y talleres',
+      contenido: '',
       url: 'servicios/cursos-talleres'
     },
     {
       id: 7,
       img: './../../../assets/capacitaciones.jpg',
       title: 'Capacitaciones',
+      contenido: '',
       url: 'servicios/capacitaciones'
     },
     {
       id: 8,
       img: '../../../assets/saludmental.jpg',
       title: 'Programas de prevención y promoción de la salud mental',
+      contenido: '',
       url: 'servicios/salud-mental'
     },
   ]

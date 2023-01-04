@@ -54,13 +54,11 @@
         <div class="container-fluid">
             <div class="row d-flex justify-content-center">
                 <div class="card m-3 p-0 col-sm-12 col-md-6 col-xl-3 col-lg-4 d-flex justify-content-center"
-                    *ngFor="let item of servicios" style="width: 18rem;">
-                    <img src="{{item.img}}" class="card-img-top" alt="...">
+                    *ngFor="let item of servicios" style="width: 18rem; ">
+                    <img src="{{item.img}}" class="card-img-top" alt="..." height="130">
                     <div class="card-body">
                         <h5 class="card-title">{{item.title}}</h5>
-                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                            of the
-                            card's content.</p> -->
+                        <p class="card-text">{{item.contenido}}</p>
                         <a class="btn btn-primary" (click)="moreInformation(item.url)">Más información</a>
                     </div>
                 </div>
@@ -165,7 +163,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="formulario-general d-flex justify-content-center">
         <div class="formulario">
             <h1 class="title">Contáctame</h1>
@@ -227,4 +225,3 @@
         </div>
     </div>
 </div>
-

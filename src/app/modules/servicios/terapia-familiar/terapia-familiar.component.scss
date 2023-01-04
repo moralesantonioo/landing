@@ -28,9 +28,15 @@
             }
         }
     }
+    .subTitle{
+        margin: 30px 0 8px 0 ;
+        font-weight: bold;
+        font-size: 25px;
+        font-family: 'Fredoka One', cursive;
+    }
     .descripcion{
-        margin: 8rem 0 40px 10px;
-        height: 294px;
+        margin: 8rem 10px 40px 10px;
+        height: auto;
         .title{
             font-weight: bold;
             font-size: 25px;
@@ -40,6 +46,7 @@
         .descripcion_content{
             line-height: 21pt; 
             font-size:  16px;
+            font-weight: 400;
         }
     }
 }
@@ -68,12 +75,14 @@
             }
         }
         .descripcion{
+            margin: 8rem 50px 40px 10px;
             .title{
                 font-size:60px;
             }
             .descripcion_content{
                 line-height: 21pt; 
                 font-size:  20px;
+                
             }
         }
     }
