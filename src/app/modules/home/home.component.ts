@@ -1,15 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { fakeAsync } from '@angular/core/testing';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { repeat } from 'rxjs';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
+
+
 export class HomeComponent implements OnInit {
   panelOpenState = false;
   position = 'above';
@@ -18,7 +19,7 @@ export class HomeComponent implements OnInit {
   loading: boolean = false;
   contador: number = 0
   notificacion: boolean = false;
-
+  
   /* 
     dataContador = [
       {

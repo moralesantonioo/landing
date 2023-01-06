@@ -10,7 +10,6 @@
                     psicoterapéutico. Nosotros te acompañamos en tu proceso, brindando un servicio de calidad, adaptable
                     a
                     tus necesidades con el objetivo de desestigmatizar la salud mental. </span>
-                <!-- <span class="text">¿AGENDAMOS UNA CITA?</span> -->
                 <div class="btn">
                     <button class="btn-contacto" mat-raised-button color="primary" (click)="goWhatsapp()">Agenda tu
                         cita</button>
@@ -18,38 +17,31 @@
             </div>
         </div>
     </div>
-    <!-- <div class="section-emociones">
-        <span class="title">¿Cómo te sientes hoy?</span>
-        <div class="section-emociones_content">
-            <div class="emociones" *ngFor="let item of dataEmosiones">
-                <img class="img" src="{{item.img}}" alt="" width="100">
-                <span class="title_emociones">{{item.title}}</span>
+    <div class="ofrecemos">
+        <h1 class="title">¿QUÉ OFRECEMOS?</h1>
+        <div class="slider-container">
+            <div class="slider-content">
+                <div class="card-wrapper">
+                    <div class="cardd" *ngFor="let item of servicios">
+                        <div class="imagen-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-imagen">
+                                <img src="{{item.img}}" alt="" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">{{item.title}}</h2>
+                            <p class="description">{{item.contenido}}</p>
+
+                            <button class="button" (click)="moreInformation(item.url)">Más informacion</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div> -->
-    <!--   <h1 class="text_section-secundary">¡Toma terapia online desde cualquier parte del mundo!</h1>
-    <div class="section-secundary">
-        <div class="section-items" *ngFor="let item of dataContador">
-            <img class="image" src="{{item.img}}" alt="" width="60">
-            <span class="title">{{item.title}}</span>
-            <span class="numero"
-                *ngIf="item.title === 'Pacientes atendidos' || item.title === 'Años de experiencia'">+{{item.min}}</span>
-            <span class="numero" *ngIf="item.title === 'Seguidores en tiktok'">{{item.min}}k</span>
-            <span class="numero" *ngIf="item.title === 'Mejoraron su condición'">{{item.min}}%</span>
         </div>
     </div>
-    <h1 class="text_section-terciario">¿Qué ofrecemos?</h1>
-    <div class="section-terciario">
-        <div class="section-terciario_group">
-            <div class="section-items" *ngFor="let item of dataServicios">
-                <img class="image" src="{{item.img}}" alt="" width="70">
-                <span class="title">{{item.title}}</span>
-                <button class="btn-contacto" mat-raised-button color="primary" (click)="goServices(item.url)">Más
-                    información</button>
-            </div>
-        </div>
-    </div> -->
-    <div class="section-ofrecemos container-fluid d-flex justify-content-center">
+    <!-- <div class="section-ofrecemos container-fluid d-flex justify-content-center">
         <h1 class="title">¿QUÉ OFRECEMOS?</h1>
         <div class="container-fluid">
             <div class="row d-flex justify-content-center">
@@ -64,7 +56,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="section-planes my-5">
         <h1 class="title py-4">SERVICIOS Y PRECIOS</h1>
         <span class="plan-descripcion_primary">Te damos la Bienvenida, aquí te encontrarás a ti mismo, escoge el
