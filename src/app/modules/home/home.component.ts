@@ -88,7 +88,7 @@ export class HomeComponent implements OnInit {
       contenido: 'Expertos en modificación conductual, control de impulsos y emociones, relaciones interpersonales e intrapersonales, entre otros. ',
       url: 'servicios/teparia-para-adolecentes'
     },
-    {
+    /* {
       id: 6,
       img: '../../../assets/cursosytalleres.jpg',
       title: 'Cursos y talleres',
@@ -105,10 +105,10 @@ export class HomeComponent implements OnInit {
     {
       id: 8,
       img: '../../../assets/saludmental.jpg',
-      title: 'Programas de prevención y promoción de la salud mental',
+      title: 'Salud mental',
       contenido: '',
       url: 'servicios/salud-mental'
-    },
+    }, */
   ]
 
   agendaCita = [

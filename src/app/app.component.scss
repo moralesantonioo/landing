@@ -108,6 +108,14 @@
                 .sub-title {
                     font-size: 25px;
                     font-family: 'Playfair Display', serif;
+                    
+                }
+                .phone{
+                    display: flex;
+                    gap: 8px;
+                    margin: 10px 0 ;
+                    font-size: 16px;
+                    align-items: center;
                 }
             }
         }
@@ -115,15 +123,104 @@
 
     .footer {
         width: 100%;
-        height: 80px;
-        background-color: #003869;
+        height: auto;
+        background-color:rgb(233, 233, 233);
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: #fff;
         font-size: 12px;
         font-weight: bold;
         gap: 10px;
+        margin-top: 30px;
+        .footer_imagen{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            .footer_frase{
+                padding: 10px 50px;
+                font-size: 16px;
+                font-family: 'Unbounded', cursive;
+                font-style: italic;
+                color: rgb(11, 113, 203);
+            }
+        }
+        .footer_enlaces{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 50px 0;
+            .title{
+                font-size: 18px;
+                color: #003869;
+                font-family: 'Unbounded', cursive;
+            }
+            .enlaces{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+                font-family: 'Unbounded', cursive;
+                a{
+                    text-decoration: none;
+                    color: rgb(11, 113, 203);
+                }
+            }
+        }
+        .footer_servicios{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0 0 50px 0;
+            .title{
+                font-size: 18px;
+                color: #003869;
+                font-family: 'Unbounded', cursive;
+            }
+            .servicios{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                gap: 8px;
+                text-decoration: none;
+                .servicios_items{
+                    display: flex; 
+                    flex-direction: column;
+                    gap: 8px;
+                    font-family: 'Unbounded', cursive;
+                    a{
+                        text-decoration: none;
+                        color: rgb(11, 113, 203);
+                    }
+                }
+                .servicios_items2{
+                    display: flex; 
+                    flex-direction: column;
+                    gap: 8px;
+                    font-family: 'Unbounded', cursive;
+                    a{
+                        text-decoration: none;
+                        color: rgb(11, 113, 203);
+                    }
+                }
+            }
+        }
+        .footer_mail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 10px;
+            margin: 0 0 20px 0;
+        }
     }
 }
 
@@ -136,6 +233,84 @@
 
         .whatsapp {
             display: block;
+        }
+        .footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 12px;
+            font-weight: bold;
+            gap: 10px;
+            color: #000;
+            padding: 5px 0;
+            position: relative;
+            .footer_imagen{
+                width: 33%;
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
+                .img{
+                    position: relative;
+                    top: -20px;
+                    left: 40px;
+                }
+                .footer_frase{
+                    padding: 10px 50px;
+                    font-size: 14px;
+                    font-family: 'Unbounded', cursive;
+                }
+            }
+            .footer_enlaces{
+                width: 33%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 50px 0;
+                .title{
+                    font-size: 18px;
+                    position: absolute;
+                    top: 40px;
+                }
+                .enlaces{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 8px;
+                    text-decoration: none;
+                    position: relative;
+                    top: 20px;
+                }
+            }
+            .footer_servicios{
+                width: 33%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 0 0 50px 0;
+                .title{
+                    font-size: 18px;
+                    position: absolute;
+                    top: 40px;
+                }
+                .servicios{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    text-align: center;
+                    justify-content: center;
+                    gap: 60px;
+                    text-decoration: none;
+                    position: relative;
+                    top: 50px;
+                }
+            }
         }
     }
 }

@@ -37,6 +37,12 @@
                     <!--  <mat-progress-bar mode="indeterminate"></mat-progress-bar> -->
                     <span class="title">Jhenifer Pinedo</span>
                     <span class="sub-title">Psicóloga Clínica</span>
+                    <span class="phone">
+                        <span class="material-icons-outlined">
+                            phone
+                        </span>
+                        +51 972 676 287
+                    </span>
                     <div class="spinner-border" role="status">
                         <span class="visually-hidden">Loading...</span>
                     </div>
@@ -44,10 +50,43 @@
             </router-outlet>
         </div>
         <div class="footer">
-            <span class="material-icons-outlined">
-                mail
-            </span>
-            jheniferpinedo@gmail.com
+            <div class="footer_imagen">
+                <img src="../assets//imagen-footer-sf.png" alt="" height="200" width="250" class="img">
+                <span class="footer_frase">"Es hora de que empieces tu transformación y estamos contigo para
+                    guiarte"</span>
+            </div>
+            <div class="footer_enlaces">
+                <h2 class="title">Enlaces</h2>
+                <div class="enlaces">
+                    <a routerLink="/nosotros">Nosotros</a>
+                    <a routerLink="/servicios">Servicios</a>
+                    <a
+                        href="https://api.whatsapp.com/send?phone=+51972676287&text=¡Hola!, quisiera obtener información sobre los servicios de psicología.">Contacto</a>
+                </div>
+            </div>
+            <div class="footer_servicios">
+                <h2 class="title">Nuestos servicios</h2>
+                <div class="servicios">
+                    <div class="servicios_items">
+                        <a routerLink="/servicios/teparia-individual'">Terapia individual</a>
+                        <a routerLink="/servicios/teparia-de-parejas">Terapia de pareja</a>
+                        <a routerLink="/servicios/teparia-infantil">Terapia familiar</a>
+                        <a routerLink="/servicios/teparia-familiar">Terapia infantil</a>
+                    </div>
+                    <div class="servicios_items2">
+                        <a routerLink="/servicios/teparia-para-adolecentes">Terapia para adolescentes</a>
+                        <a routerLink="/servicios/cursos-talleres">Cursos y talleres</a>
+                        <a routerLink="/servicios/capacitaciones">Capacitaciones</a>
+                        <a routerLink="/servicios/salud-mental">Salud mental</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="footer_mail">
+                <span class="material-icons-outlined">
+                    mail
+                </span>
+                jheniferpinedo@gmail.com
+            </div> -->
         </div>
     </div>
 </div>

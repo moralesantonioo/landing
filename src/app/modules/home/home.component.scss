@@ -83,6 +83,7 @@
                         display: flex;
                         flex-direction: column;
                         align-items: center;
+                        padding-bottom: 15px;
                         //box-shadow: 1px 2px 3px rgba(0,0,0,0.5);
                         .imagen-content{
                             width: 100%;
@@ -98,21 +99,17 @@
                                 height: 100%;
                                 width: 100%;
                                 background: #003869;
-                                border-radius: 25px 25px 0 25px;
+                                border-radius: 25px 25px 25px 25px;
                             }
-                            .overlay::before, .overlay::after{
-                                content: '';
-                                    position: absolute;
-                                    height: 40px;
-                                    right: 0;
-                                    bottom: -40px;
-                                    width: 40px;
-                                    background-color: #003869;
-                                    z-index: 10;
-                            }
-                            .overlay::after{
-                                border-radius: 0 25px 0 0;
+                            .overlay_item{
+                                position: absolute;
+                                height: 40px;
+                                right: 0;
+                                bottom: -40px;
+                                width: 40px;
                                 background-color: #fff;
+                                border-radius: 0 25px 0 0;
+                                z-index: 1;
                             }
                             .card-imagen{
                                 position: relative;
@@ -135,13 +132,15 @@
                             flex-direction: column;
                             align-items: center;
                             .name{
-                                font-size: 18px;
+                                font-size: 16px;
                                 font-weight: bold;
                                 text-align: center;
+                                line-height: 17pt;
                             }
                             .description{
-                                font-size: 14px;
+                                font-size: 12px;
                                 text-align: center;
+                                height: 80px;
                             }
                             .button{
                                 background-color: #003869;
@@ -149,6 +148,8 @@
                                 border: none;
                                 padding: 5px 10px;
                                 border-radius: 12px;
+                                position: relative;
+                                top: 15px;
                             }
                         }
                         
