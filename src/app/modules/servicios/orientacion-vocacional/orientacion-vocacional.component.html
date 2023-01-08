@@ -1,0 +1,64 @@
+<div class="t-individual">
+    <div class="fondo_image">
+        <img class="image" src="../../../../assets/orientacion-vocacional2.jpg" alt="">
+        <div class="contenido">
+            <h1 class="title">ORIENTACIÓN VOCACIONAL</h1>
+            <button class="btn-contacto" mat-raised-button color="primary" (click)="goWhatsapp()">Agenda tu
+                cita</button>
+        </div>
+    </div>
+    <div class="descripcion">
+        <h1 class="title">ORIENTACIÓN VOCACIONAL</h1>
+        <span class="descripcion_content">La orientación vocacional es un proceso de aprendizaje que implica
+            autoconocernos e identificar nuestros objetivos de vida. Esto nos permite identificar aquellas carreras que
+            se adaptan mejor a nuestra forma de ser.</span>
+        <h3 class="subTitle">¿No estás seguro o segura qué carrera te conviene más? ¿Tienes demasiadas o ninguna opción
+            de carrera?</h3>
+        <span class="descripcion_content">
+            <!-- <div class="row py-4">
+                <div class="col-sm-12 col-md-6 col-xl-4 col-lg-4">
+                    <ul>
+                        <li><strong>Tiene un temperamento muy fuerte</strong></li>
+                        <li><strong>Se niega a hacerme caso</strong></li>
+                        <li><strong>Es desafiante</strong></li>
+                        <li><strong>No quiere seguir las normas y los límites</strong></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><strong>Es muy impulsivo/a</strong></li>
+                        <li><strong>En ocasiones es agresivo/a</strong></li>
+                        <li><strong>Le han expulsado del colegio</strong></li>
+                    </ul>
+                </div>
+            </div> -->
+            Hay tres cosas fundamentales en el proceso de orientación vocacional que debes de tener en cuenta al momento
+            de elegir tu carrera universitaria.
+            <div class="row d-flex justify-content-around my-5">
+                <div class="card col-sm-12 col-md-6 col-xl-3 col-lg-4 m-2" style="width: 18rem;" *ngFor="let item of dataOrientacion">
+                    <div class="card-body">
+                        <h2 class="card-title">{{item.title}}</h2>
+                        <p class="card-text">{{item.content}}</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <h3 class="subTitle">¿En qué consiste la terapia para adolescentes?</h3>
+            <span class="descripcion_content">
+                La terapia consta de sesiones terapéuticas individuales y un curso de aprendizaje de habilidades
+                conductuales necesarias para la regulación emocional, las cuales se llevan de forma paralela durante la
+                primera parte del tratamiento. Inicialmente el cliente y familia pasan por una evaluación inicial de
+                caso para la determinación de la duración e intensidad del tratamiento requerido.<br>
+                En la actualidad este tipo de problemática en adolescentes ha aumentado, suponiendo uno de los
+                diagnósticos más frecuentes tanto en edad infantil como en juvenil. El tipo de conducta que expresan
+                generalmente estos trastornos son aquellas denominadas conductas disruptivas (conductas que molestan,
+                interfieren en los demás), las cuales implican la interrupción en el desarrollo evolutivo del niño
+                imposibilitándolo para crear y mantener relaciones sociales saludables. Otro tipo de conductas que
+                pueden presentar son las denominadas conductas de carácter negativo o negativistas; estas conductas se
+                relacionan con un comportamiento que desafía a los padres o bien a otras personas mayores a quienes
+                deben tener respeto, buscando el desafío a la autoridad.
+            </span>
+        </span>
+    </div>
+</div>

@@ -89,24 +89,17 @@ export class NavbarComponent implements OnInit {
     this.services = false
   }
 
-  cursosTalleres(){
-    this.router.navigate(['servicios/cursos-talleres']);
+  dependenciaEmocional(){
+    this.router.navigate(['servicios/terapia-de-dependencia-emocional']);
     this.nosotros = false
     this.text = false
     this.services = false
   }
 
-  capacitaciones(){
-    this.router.navigate(['servicios/capacitaciones']);
+  orientacionVocacional(){
+    this.router.navigate(['servicios/orientacion-vocacional']);
     this.nosotros = false
     this.text = false
     this.services = false
   }
-
-  saludMental(){
-    this.router.navigate(['servicios/salud-mental']);
-    this.nosotros = false
-    this.text = false
-    this.services = false
-  } 
 }

@@ -11,6 +11,8 @@ import { TerapiaIndividualComponent } from './terapia-individual/terapia-individ
 import { TerapiaInfantilComponent } from './terapia-infantil/terapia-infantil.component';
 import { TerapiaParejaComponent } from './terapia-pareja/terapia-pareja.component';
 import { MatButtonModule } from '@angular/material/button';
+import { OrientacionVocacionalComponent } from './orientacion-vocacional/orientacion-vocacional.component';
+import { TerapiaDependenciaEmocionalComponent } from './terapia-dependencia-emocional/terapia-dependencia-emocional.component';
 
 const materialComponents = [
   MatButtonModule
@@ -25,7 +27,9 @@ const materialComponents = [
     TerapiaFamiliarComponent,
     TerapiaIndividualComponent,
     TerapiaInfantilComponent,
-    TerapiaParejaComponent
+    TerapiaParejaComponent,
+    OrientacionVocacionalComponent,
+    TerapiaDependenciaEmocionalComponent
   ],
   imports: [
     CommonModule,

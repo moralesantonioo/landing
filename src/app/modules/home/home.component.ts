@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
   loading: boolean = false;
   contador: number = 0
   notificacion: boolean = false;
-  
+
   /* 
     dataContador = [
       {
@@ -88,27 +88,20 @@ export class HomeComponent implements OnInit {
       contenido: 'Expertos en modificación conductual, control de impulsos y emociones, relaciones interpersonales e intrapersonales, entre otros. ',
       url: 'servicios/teparia-para-adolecentes'
     },
-    /* {
+    {
       id: 6,
-      img: '../../../assets/cursosytalleres.jpg',
-      title: 'Cursos y talleres',
-      contenido: '',
-      url: 'servicios/cursos-talleres'
+      img: '../../../assets/t-dependencia-emocional.jpg',
+      title: 'Terapia de dependencia emocional',
+      contenido: 'Supera la dependencia emocional y conviértela en libertad emocional.',
+      url: 'servicios/terapia-de-dependencia-emocional'
     },
     {
       id: 7,
-      img: './../../../assets/capacitaciones.jpg',
-      title: 'Capacitaciones',
-      contenido: '',
-      url: 'servicios/capacitaciones'
-    },
-    {
-      id: 8,
-      img: '../../../assets/saludmental.jpg',
-      title: 'Salud mental',
-      contenido: '',
-      url: 'servicios/salud-mental'
-    }, */
+      img: '../../../assets/orientacion-vocacional.jpg',
+      title: 'Orientación vocacional',
+      contenido: 'Proceso de aprendizaje que implica autoconocernos e identificar nuestros objetivos de vida',
+      url: 'servicios/orientacion-vocacional'
+    }
   ]
 
   agendaCita = [
